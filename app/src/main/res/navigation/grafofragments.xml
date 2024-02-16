@@ -14,7 +14,8 @@
         <action
             android:id="@+id/action_fragment1_to_fragment2"
             app:destination="@id/fragment2"
-            app:enterAnim="@android:anim/slide_out_right" />
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@anim/nav_default_exit_anim" />
     </fragment>
     <fragment
         android:id="@+id/fragment2"
@@ -23,7 +24,9 @@
         tools:layout="@layout/fragment_2" >
         <action
             android:id="@+id/action_fragment2_to_fragment3"
-            app:destination="@id/fragment3" />
+            app:destination="@id/fragment3"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <argument
             android:name="name"
             app:argType="string"
@@ -36,10 +39,14 @@
         tools:layout="@layout/fragment_3" >
         <action
             android:id="@+id/action_fragment3_to_fragment2"
-            app:destination="@id/fragment2" />
+            app:destination="@id/fragment2"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <action
             android:id="@+id/action_fragment3_to_fragment1"
-            app:destination="@id/fragment1" />
+            app:destination="@id/fragment1"
+            app:enterAnim="@android:anim/slide_out_right"
+            app:exitAnim="@anim/nav_default_exit_anim" />
         <argument
             android:name="provincia"
             app:argType="string"

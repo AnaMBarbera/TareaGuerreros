@@ -27,12 +27,12 @@ class Fragment1 : Fragment() {
         val btnAnimado=root.findViewById<LottieAnimationView>(R.id.btnAnimado)
         botonnav.setOnClickListener {
             //llamamos a la acción (no al fragmento)
-            val action = Fragment1Directions.actionFragment1ToFragment2("Valor argumento 1")
+            val action = Fragment1Directions.actionFragment1ToFragment2("Valor argumento 1 (name)")
             findNavController().navigate(action)
         }
         btnAnimado.setOnClickListener {
             //llamamos a la acción (no al fragmento)
-            val action = Fragment1Directions.actionFragment1ToFragment2("Valor argumento del primer fragmento")
+            val action = Fragment1Directions.actionFragment1ToFragment2("Valor argumento del primer fragmento (name)")
             findNavController().navigate(action)
         }
 
