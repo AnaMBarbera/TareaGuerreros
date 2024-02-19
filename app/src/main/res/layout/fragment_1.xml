@@ -12,37 +12,51 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#0097A7"
-            android:text="FRAGMENTO 1"
-            android:textAlignment="center"
-            android:textColor="#FAF5F5"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/btnAnimado"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            app:lottie_rawRes="@raw/animation1708101123024"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            />
-
-        <Button
-            android:id="@+id/button1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:text="CLICK al\n Fragment2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#000"
+            android:text="FRAGMENTO 1"
             android:textAlignment="center"
-            android:textSize="20sp" />
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
 
+        <ImageView
+            android:id="@+id/imageViewXena"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/xena"
+            android:clickable="true"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#000"
+            android:text="¡Elige tu guerrero!"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewConan"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/conan"
+            android:clickable="true"/>
 
 
     </LinearLayout>

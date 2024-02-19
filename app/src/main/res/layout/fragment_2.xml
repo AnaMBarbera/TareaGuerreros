@@ -11,34 +11,24 @@
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-
         <TextView
             android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#C2185B"
-            android:text="FRAGMENTO 2"
-            android:textAlignment="center"
-            android:textColor="#FAF5F5"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/button21"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20sp"
-            android:text="CLICK al\n Fragment3"
-            android:textSize="20sp" />
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:background="#000"
+            android:text="¡Tu guerrero!"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"/>
 
-        <TextView
-            android:id="@+id/textViewParam"
+        <ImageView
+            android:id="@+id/guerrero"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="parámetro recibido"
-            android:textSize="16sp" />
-
+            android:layout_height="match_parent"
+            />
     </LinearLayout>
-
-
 </FrameLayout>
