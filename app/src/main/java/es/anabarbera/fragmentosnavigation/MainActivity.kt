@@ -1,14 +1,12 @@
 package es.anabarbera.fragmentosnavigation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.NavController
-import androidx.navigation.Navigation
+
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-
-private lateinit var navController: NavController
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-     // navController = Navigation.findNavController(this, R.id.idContenedor)
-       val bottomBar=findViewById<BottomNavigationView>(R.id.idBottonNav)
+        val bottomBar=findViewById<BottomNavigationView>(R.id.idBottonNav)
 
           bottomBar.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -27,10 +24,13 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
 
-                /*R.id.home -> {
+                R.id.home -> {
                     // Lógica para ir al inicio
-
-                }*/
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK)
+                    startActivity(intent)
+                    true
+                }
 
                 else -> false
             }
